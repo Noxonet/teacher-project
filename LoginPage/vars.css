@@ -1,0 +1,127 @@
+:root{
+    --color1: #2648e2;
+    --color2: #0021b6;
+    --color3: #bbbbbb;
+    --color4: #6984ff;
+    --color5: #2600ff;
+    --color6 : #e2e2e2;
+    --color7: #2b2b2b;
+    --color8: #000000;
+    --color9 : #1b1d1de3;
+    --font1 : 'Courier New', Courier, monospace;
+    --font2 : Arial, Helvetica, sans-serif;
+    --font3 :  Georgia, 'Times New Roman', Times, serif;
+    --shadow1 : 0px 1px 20px -5px black;
+    --shadow2 : 0px -5px 10px 10px black;
+    --shadow3 : 0px 3px 10px -3px black;   
+}
+.c-var1{
+color: var(--color1) !important;
+}
+.c-var2{
+color: var(--color2) !important;
+}
+.c-var3{
+color: var(--color3) !important;
+}
+.c-var4{
+color: var(--color4) !important;
+}
+.c-var5{
+color: var(--color5) !important;
+}
+.c-var6{
+color: var(--color6) !important;
+}
+.c-var7{
+color: var(--color7) !important;
+}
+.c-var8{
+color: var(--color8) !important;
+}
+.c-var9{
+color: var(--color9) !important;
+}
+.bgc-var1{
+background-color: var(--color1) !important;
+}
+.bgc-var2{
+background-color: var(--color2) !important;
+}
+.bgc-var3{
+background-color: var(--color3) !important;
+}
+.bgc-var4{
+background-color: var(--color4) !important;
+}
+.bgc-var5{
+background-color: var(--color5) !important;
+}
+.bgc-var6{
+background-color: var(--color6) !important;
+}
+.bgc-var7{
+background-color: var(--color7) !important;
+}
+.bgc-var8{
+background-color: var(--color8) !important;
+}
+.bgc-var9{
+    background-color: var(--color9) !important;
+}
+.btn-var1{
+    background-color: var(--color1) !important;
+}
+.btn-var2{
+background-color: var(--color2) !important;
+}
+.btn-var3{
+background-color: var(--color3) !important;
+}
+.btn-var4{
+background-color: var(--color4) !important;
+}
+.btn-var5{
+background-color: var(--color5) !important;
+}
+.btn-var6{
+background-color: var(--color6) !important;
+}
+.btn-var7{
+background-color: var(--color7) !important;
+}
+.btn-var8{
+background-color: var(--color8) !important;
+}
+.btn-var9{
+    background-color: var(--color9) !important;
+}
+.btn-var1:hover,.btn-var2:hover,.btn-var3:hover,.btn-var4:hover,.btn-var5:hover,.btn-var6:hover,.btn-var7:hover,.btn-var8:hover,.btn-var9:hover{
+    background-color: transparent !important;
+    transition: background-color ease .3s,color ease .3s ;
+    color: var(--color7) !important;
+}
+
+.text-1vw{
+    font-size: 1vw !important;
+}
+.text-2vw{
+    font-size: 2vw !important;
+}
+.text-3vw{
+    font-size: 3vw !important;
+}
+/* @media (min-width: 400px) {
+}
+@media (min-width: 576px) {
+}
+@media screen and (min-width : 769px) {
+}
+@media screen and (min-width : 991px) {
+}
+@media screen and (min-width : 1250px) {
+} */
+
+
+
+
