@@ -1,6 +1,7 @@
 :root{
     /* --color1: #2648e2; */
-    --color1: #266ba3;
+    /* --color1: #266ba3; */
+    --color1: #222222;
     --color2: #0021b6;
     --color3: #ffffff;
     --color4: #6984ff;
@@ -10,12 +11,16 @@
     --color8: #000000;
     --color9: #ece9e9;
     --color10:#a5a5a5;
-    --backGroundColor1 : linear-gradient(45deg, #2b80c5, #000205);
+    --color11:#757575;
+    /* --backGroundColor1 : linear-gradient(45deg, #2b80c5, #000205); */
+    --backGroundColor1 : linear-gradient(45deg, var(--color1), #000205);
     --backGroundColor2 : linear-gradient(276deg,black, #000000bf);
     /* --font1 : 'Courier New', Courier, monospace; */
-    --font1 : Aviny;
-    --font2 : samim;
-    --font3 :  Georgia, 'Times New Roman', Times, serif;
+    --font1 : Avini;
+    --font2 : rubik,regular;
+    --font3 : Samim;
+    --font4 : Vazirmatn, sans-serif;
+    --font5 : "Playwrite GB S", cursive;
     --shadow1 : rgba(100, 100, 100, 0.48) 6px 2px 16px 0px, rgba(8, 8, 8, 0.8) -6px -2px 16px 0px;
     --shadow2 : rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;;
     --shadow3: rgba(145, 145, 145, 0.4) .2vw .5vw, rgba(145, 145,145, 0.3) .4vw 1vw, rgba(145, 145,145, 0.2) .6vw 1.5vw, rgba(145, 145,145, 0.1) .8vw 2vw, rgba(145, 145,145, 0.05) 1vw 2.5vw;
@@ -27,11 +32,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @font-face {
-    font-family: Aviny;
+    font-family: Avini;
     src: url(./Avini.ttf) format("ttf");
 }
 @font-face {
-    font-family: samim;
+    font-family: rubik,regular;
+    src: url(./Rubik-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: Samim;
     src: url(./Samim.ttf) format("ttf");
 }
 a {
@@ -120,16 +129,17 @@ body{
     position: absolute;
     top: 100%;
     left: -50%;
-    height: 0;
-    width: 20vw;
+    height: fit-content;
+    width: 22vw;
+    opacity: 0;
     background-color: var(--color9);
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;  
+    border-radius: 1vw;  
     display: flex;
     flex-direction: column;
     align-items: center;
+    visibility: hidden;
     gap: 2vw;
-    transition: height ease .5s;
+    transition: opacity ease .5s, visibility ease .5s;
     overflow: hidden;
 }
 .drop-down-box-items a{
@@ -139,7 +149,7 @@ body{
     margin: 0.5vw auto;
 }
 .drop-down-box-items a:hover{
-    color: var(--color1);
+    color: var(--color10);
 }
 .drop-down:after{
     content: url(./right-arrow.svg);
@@ -154,20 +164,23 @@ body{
     transform:rotate(90deg)  translate(5px,5px);
 }
 .drop-down:hover .drop-down-box-items{
-    height: 22vw;
+    visibility: visible;
+    opacity: 1;
 }
 .nav-top .nav-top-btn{
     padding: .6vw 1vw;
     height: fit-content;
     border-radius: 1vw;
     border: none;
-    color: var(--color7);
-    background-color: var(--color3);
+    color: var(--color6);
+    border: .2vw solid var(--color6);
+    background-color: transparent;
     font-size: 2vw;
-    transition: color ease .2s;
+    transition: color ease .2s,border-color ease .2s;
 }
 .nav-top .nav-top-btn:hover{
-    color: var(--color4);
+    color: var(--color11);
+    border-color: var(--color11);
 }
 .nav-top a{
     margin: 1vw;
@@ -184,7 +197,7 @@ body{
     transition: color ease .4s;
 }
 .nav-top .row:hover{
-    color: var(--color4);
+    color: var(--color11);
 }
 
 .nav-top .row svg{
@@ -199,9 +212,29 @@ body{
 }
 .nav-top .icon-box{
     height:6vw;
-    background: url(./pics/ZYicon.png) center;
-    background-size: cover;
+    /* background: url(./pics/ZYicon.png) center; */
+    /* background-size: cover; */
     margin-left: 1vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font2);
+    color: var(--color6);
+}
+.nav-top .icon-box .Z{
+    color: var(--color11);
+    display: inline-block;
+    font-size: 6vw;
+    margin: 0;
+}
+.nav-top .icon-box .Y{
+    color: var(--color9);
+    display: inline-block;
+    font-size: 4vw;
+    margin: 0;
 }
 .box-search{
     position: relative;
@@ -415,7 +448,7 @@ body{
     padding: 0vw 2vw; 
 }
 .box-title p span {
-    color: var(--color1);
+    color: var(--color11);
 }
 .box-list{
     width:auto;
@@ -494,13 +527,14 @@ body{
 .box-produce-parent .box-produce-back{
     width: 90%;
     height: 40vw;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     border-radius: 2vw;
     box-shadow: var(--shadow1);
     user-select: none;
     direction: ltr;
     scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
     margin: 0 auto;
 }
 .box-produce-parent .box-produce-back .box-produce-front{
@@ -568,7 +602,6 @@ body{
     width: 25vw;
     height:30vw;
     border-radius: 2vw;
-    border-bottom-left-radius: 0;
     position: relative;
     filter: drop-shadow(0px 4px 8px  black);
     overflow: hidden;
@@ -583,7 +616,7 @@ body{
 .box-show-produce .produce>p{
     position: absolute;
     font-size: 2.5vw;
-    left: -100%;
+    left: 4%;
     bottom: 0vw;
     color: var(--color3);
     font-family: var(--font3);
@@ -591,16 +624,14 @@ body{
     padding: 1vw;
     border-radius: .5vw;
     margin: 0;
-    transition: left ease-in .2s;
     z-index: 1;   
 }
 .box-show-produce .produce .productName{
     font-size: 2.5vw;
-    top: -10vw;
+    top: 10%;
     right: 1vw;
     max-width: 75%;
     height: fit-content;
-    transition: top ease .2s;
 }
 .box-show-produce .produce button{
     z-index: 2;
@@ -608,14 +639,13 @@ body{
     color: var(--color3);
     border-radius: 1vw;
     background-color: transparent;
-    right: -100%;
+    right: 5%;
     bottom: 5vw;
     padding: 1vw;
     border: none;
     font-size: 2vw;
     font-family: var(--font2);
     border: 2px solid var(--color3);
-    transition: right ease-in .2s,width ease .1s,color ease .2s;
 
 }
 .box-show-produce .produce .add-bascket-change{
@@ -629,21 +659,29 @@ body{
     width: 5vw;
     height: 5vw;
     left: 1vw;
-    top: -15vw;
-    transition: top ease-in .2s;
+    top: 4%;
     background-color: transparent;
     border: 2px solid var(--color3);
     border-radius: 50%;
     padding: .9vw;
 }
-.box-show-produce .produce:hover .save-icon,.box-show-produce .produce:hover .productName{
-    top: 1vw;
+.box-show-produce .produce .save-icon,
+.box-show-produce .produce .productName,
+.box-show-produce .produce .go-to-product,
+.box-show-produce .produce button,
+.box-show-produce .produce p{
+    visibility: hidden;
+    font-family: var(--font2);
+    opacity: 0;
+    transition:opacity ease .5s ,visibility ease .5s;
 }
-.box-show-produce .produce:hover button{
-    right:2vw;
-}
+.box-show-produce .produce:hover .save-icon,
+.box-show-produce .produce:hover .productName,
+.box-show-produce .produce:hover .go-to-product,
+.box-show-produce .produce:hover button,
 .box-show-produce .produce:hover p{
-    left: 2vw;
+    visibility: visible;
+    opacity: 1;
 }
 .box-show-produce .produce::after{
     content: '';
@@ -665,7 +703,7 @@ body{
 .box-show-produce .produce .go-to-product{
     content: url(./right-arrow.svg);
     position: absolute;
-    top: 1vw;
+    top: 25%;
     left: 1vw;
     width: 5vw;
     height: 5vw;
@@ -674,15 +712,11 @@ body{
     padding:.7vw;
     border-radius: 50%;
     border: 2px solid var(--color6);
-    transition: top ease .2s;
-}
-.box-show-produce .produce:hover .go-to-product{
-    top: 8vw;
 }
 footer{
     position: relative;
     width: 100%;
-    height: 55vw;
+    height: 70vw;
     box-shadow: 0px 0px 10px 1px black;
     margin: 0 auto;
     background: var(--backGroundColor2);
@@ -707,10 +741,39 @@ footer .box-certificate .certificate{
     width: 15%;
     background-color: black;
 }
+footer .text{
+    width: 70%;
+    height: 15vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-top: 10vw;
+    gap: 2vw;
+}
+footer .text p{
+    margin: 0;
+    padding: 0;
+    transition:color ease .1s,font-size ease .1s;
+    font-family: auto;
+}
+footer .text .first{
+    font-size: 8vw;
+    color: var(--color11);
+}
+footer .text .remains{
+    font-size: 5vw;
+    color: var(--color6);
+}
+footer .text p:hover{
+    font-size: 7vw;
+    color: var(--color4);
+}
 footer .list-label-options{
     position: relative;
     margin: 2vw;
-    height: 50%;
+    height: 35%;
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -726,7 +789,7 @@ footer .list-label-options ul{
 footer .list-label-options ul p{
     font-size: 2.5vw;
     margin: 1vw 0;
-    color: var(--color4);
+    color: var(--color6);
     font-family: var(--font2);
     cursor: default;
     text-align: center;
@@ -770,7 +833,7 @@ footer .list-label-options ul li a:hover{
     align-items: center;
 }
 .social-media .col-social .social-media-icon{
-    fill: var(--color1);
+    fill: var(--color6);
     transition:  fill ease .3s,box-shadow ease .3s,transform ease .3s;
 }
 .social-media .col-social .social-media-icon:hover{
@@ -812,7 +875,7 @@ footer .list-label-options ul li a:hover{
     }
     .three-line-change{
         left: 65%;
-        fill: var(--color1);
+        fill: var(--color4);
     }
     .nav-left{
         display: flex;
@@ -857,7 +920,7 @@ footer .list-label-options ul li a:hover{
         height: 4vw;
     }
     .drop-down-box-items{
-        top: 55%;
+        top: 50%;
         left: 0;
         width: 100%;
         background-color: var(--color7);
@@ -890,8 +953,7 @@ footer .list-label-options ul li a:hover{
         font-size: 4vw;
     }
     .box-title{
-        background-attachment: fixed;
-        background-size: 100% 60%;
+        background-attachment: local;
     }
      .box-list {
         font-size: 3vw;
@@ -916,7 +978,7 @@ footer .list-label-options ul li a:hover{
         margin: 20vw auto;
     }
     .box-produce-parent .box-produce-back{
-        height: 70vw;
+        height: 110vw;
     }
     .box-produce-parent .box-arrow svg{
         width: 17vw;
@@ -924,25 +986,19 @@ footer .list-label-options ul li a:hover{
     }
     .box-show-produce .produce{
         width: 90%;
-        height: 80vw;
+        height: 110vw;
     }
     .box-show-produce .produce svg{
         width: 12vw  !important;
         height: 12vw !important;
         margin: 1vw;
     }
-    .box-show-produce .produce:hover .go-to-product{
-        top: 15vw;
-    }
-    .box-show-produce .produce:hover .productName {
-        top: 7vw;
-        right: 10vw;
+    .box-show-produce .produce .productName {
         font-size: 7vw;
     }
     .box-show-produce .produce button{
         font-size: 6vw;
         bottom: 10vw;
-        right: -100%;
         padding: 3vw;
         border-radius: 2vw;
     }
@@ -951,7 +1007,7 @@ footer .list-label-options ul li a:hover{
         bottom: 2vw;
     }
     footer{
-        height: 95vw;
+        height: 130vw;
         background-position: bottom;
         background-size: cover;
         background-color:white;
@@ -967,7 +1023,7 @@ footer .list-label-options ul li a:hover{
         text-decoration: none;
     }
     footer .box-info a{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     footer .social-media{
         height: 15vw;

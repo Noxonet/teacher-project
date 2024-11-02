@@ -55,13 +55,14 @@ const page = document.querySelector(".page"),
     scrollNav = document.querySelector(".nav-top .scroll-nav"),
     autoCompBox = document.querySelector("#auto-comp"),
     dropDown = document.querySelectorAll(".drop-down"),
+    footerText = document.querySelector("footer .text"),
     products = [
-        {id : 1,dataID : "book1",dataIDsaveICON : "save1",productName : "grammer book",price : 30 +"$",img : "./pics/Writing.General.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
-        ,{id : 2,dataID : "book2",dataIDsaveICON : "save2",productName : "listening book",price : 40 +"$",img : "./pics/Speaking.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
-        ,{id : 3,dataID : "book3",dataIDsaveICON : "save3",productName : "reading book",price : 10 +"$",img : "./pics/Listening.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
-        ,{id : 4,dataID : "book4",dataIDsaveICON : "save4",productName : "words book",price : 50 +"$",img : "./pics/003AC.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
-        ,{id : 5,dataID : "book5",dataIDsaveICON : "save5",productName : "pro words book",price : 50 +"$",img : "./pics/Untitled-1-2.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
-        ,{id : 6,dataID : "book6",dataIDsaveICON : "save6",productName : "grammer in use",price : 50 +"$",img : "./pics/001AC.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        {id : 1,dataID : "book1",dataIDsaveICON : "save1",productName : "grammer book",price : 30,img : "./pics/Writing.General.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 2,dataID : "book2",dataIDsaveICON : "save2",productName : "listening book",price : 40,img : "./pics/Speaking.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 3,dataID : "book3",dataIDsaveICON : "save3",productName : "reading book",price : 10,img : "./pics/Listening.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 4,dataID : "book4",dataIDsaveICON : "save4",productName : "words book",price : 50,img : "./pics/003AC.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 5,dataID : "book5",dataIDsaveICON : "save5",productName : "pro words book",price : 50,img : "./pics/Untitled-1-2.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 6,dataID : "book6",dataIDsaveICON : "save6",productName : "grammer in use",price : 50,img : "./pics/001AC.webp",images : ["./pics/001AC.webp","./pics/003AC.webp","./pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
     ],
     productsName = [
         "grammer book",
@@ -98,9 +99,10 @@ dropDown.forEach(row =>{
     }
 })
 ///////////////////////////////
-let fragmentProduct = document.createDocumentFragment()
 
-const prudoctsGenerator = product =>{
+
+let fragmentProduct = document.createDocumentFragment()
+const productsGenerator = product =>{
     let Elem = document.createElement("div")
     Elem.classList.add("produce")
     Elem.setAttribute("data-dataID",product.dataID)
@@ -111,7 +113,7 @@ const prudoctsGenerator = product =>{
     <img src=${product.img}>
     <p>${product.price}تومان</p>
     <a 
-    href="/teacherProject/productPage/products.html?id=${product.id}" <!-- this is your product site address -->
+    href="./productPage/products.html?id=${product.id}" <!-- this is your product site address -->
     >
     <svg xmlns="http://www.w3.org/2000/svg" class="go-to-product"  viewBox="0 0 32 32"><title>right arrow</title><g stroke-linejoin="miter" fill="#ffffff" stroke-linecap="butt" class="nc-icon-wrapper"><polyline points="10 2 24 16 10 30" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></polyline></g></svg></a>
     <button>افزودن به سبد</button>
@@ -119,9 +121,8 @@ const prudoctsGenerator = product =>{
     fragmentProduct.append(Elem)
 }
 products.forEach(product => {
-    prudoctsGenerator(product)
+    productsGenerator(product)
 })
-
 boxShowProduct.append(fragmentProduct)
 ///////////////////////////////
 const productShow = document.querySelectorAll(".box-show-produce .produce"),
@@ -129,66 +130,132 @@ addBascketBTN = document.querySelectorAll(".box-show-produce .produce button"),
 saveIcon = document.querySelectorAll(".box-show-produce .produce .save-icon"),
 GotoProduct = document.querySelectorAll(".box-show-produce .produce .go-to-product")
 //////////////////////////////
-let localList = []
-
-addBascketBTN.forEach(item => {
-    let id =  item.parentElement.dataset.id
-    if(JSON.parse(localStorage.getItem(id)) === null){
-        localStorage.setItem(id,JSON.stringify({"status" : false}))
-    }
-    if(JSON.parse(localStorage.getItem(id)).status){
-        item.classList.add("add-bascket-change") //
-        item.innerHTML = "افزوده شد" //
-    }
-    else{
-        item.classList.remove("add-bascket-change")
-        item.innerHTML = "افزودن به سبد" //
-    }
-    const addBascketHandler = () => { 
-        let id =  item.parentElement.dataset.id
-        
-        if(!JSON.parse(localStorage.getItem(id)).status){
-            localStorage.setItem(id,JSON.stringify({"status" : true}))
-            item.innerHTML = "افزوده شد" //
-            item.classList.add("add-bascket-change") //
-        }else{
-                localStorage.setItem(id,JSON.stringify({"status" : false}))
-                item.innerHTML = "افزودن به سبد" //
-                item.classList.remove("add-bascket-change")
-        }}
-    item.addEventListener("click",addBascketHandler) 
-})
-
+let flagbtn = true
+addBascketBTN.forEach(btn => {
+    btn.addEventListener("click",() => {
+        btn.classList.toggle("add-bascket-change")
+        flagbtn ? (btn.innerHTML = "افزوده شد") && (flagbtn = false) :  (btn.innerHTML = "افزودن به سبد") && (flagbtn = true)
+})})
+let flagSave = true
 saveIcon.forEach(icon => {
-    if(JSON.parse(localStorage.getItem(icon.dataset.id)) === null){
-    localStorage.setItem(icon.dataset.id,JSON.stringify({"status" : false}))
-    }
-    if(JSON.parse(localStorage.getItem(icon.dataset.id)).status){
-        icon.lastChild.children[0].style.fill = "#ffffff" 
-    }
-    const saveIconHandler = () => {
-        if(!JSON.parse(localStorage.getItem(icon.dataset.id)).status){
-            localStorage.setItem(icon.dataset.id,JSON.stringify({"status" : true}))
-            icon.lastChild.children[0].style.fill = "#ffffff" 
-        }else{
-            localStorage.setItem(icon.dataset.id,JSON.stringify({"status" : false}))
-            icon.lastChild.children[0].style.fill = "none" 
-        }}
-    icon.addEventListener("click",saveIconHandler)
-    })
+    icon.addEventListener("click",() =>  
+        flagSave ? (icon.lastChild.children[0].style.fill = "#ffffff") && (flagSave = false) : (icon.lastChild.children[0].style.fill = "none") && (flagSave = true)
+)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////getting product from API
+// fetch('API/product')
+// .then(res => {return res.json()})
+// .then(data => {
+//     productsGenerator(data)      
+// })
+// .then(() => {
+//     boxShowProduct.append(fragmentProduct)
+//     addBascketBTN = document.querySelectorAll(".box-show-produce .produce button"),
+//     saveIcon = document.querySelectorAll(".box-show-produce .produce .save-icon"),
+//     GotoProduct = document.querySelectorAll(".box-show-produce .produce .go-to-product")
+// })
+// ////////////////////////////////// btn and save icon handler 
+// .then(addBascketBTN.forEach(btn => {
+//         btn.addEventListener("click",evt => {
+//             let id = evt.parentElement.getAttribute("id")
+//             fetch("API/purche bascket",
+//             {
+//                 method : "POST",
+//                 headers : {
+//                     "Content-type" : "application/json"
+//                 },
+//                 body : JSON.stringify({ id })
+//             })
+//             .then(res => {
+//                 res.status === 200 ? item.classList.add("add-bascket-change") && (item.innerHTML = "افزوده شد") : item.classList.remove("add-bascket-change") && (item.innerHTML = "افزودن به سبد")   
+//             })
+//             .catch(err => {new Error(err)})
+//         })
+//     })
+// )
+// .then(saveIcon.forEach(icon => {
+//         icon.addEventListener("click",evt => {
+//             let id = evt.parentElement.getAttribute("id")
+//             fetch("API/saves",
+//             {
+//                 method : "POST",
+//                 headers : {
+//                     "Content-type" : "application/json"
+//                 },
+//                 body : JSON.stringify({ id })
+//             })
+//             .then(res => {
+//                 res.status === 200 ? (icon.lastChild.children[0].style.fill = "#ffffff") : (icon.lastChild.children[0].style.fill = "none")   
+//             })
+//             .catch(err => {new Error(err)})  
+//         })
+// })
+// )
+// .catch(err => new Error(err))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////
 let fragmentSearchElem = document.createDocumentFragment()
 const searchHandler = () => {
-    page.classList.add("blur")
-    searchBox.classList.remove("dis-none")
     let value = searchInput.value
-    products.forEach(item => {
-        let name = item.productName
-        name.includes(value) && searchboxElemGenerator(item)
-    })
-    searchBox.append(fragmentSearchElem)
-    if(searchBox.children.length < 2){
-        let Elem = '<p class="product_not_found">موردی یافت نشد</p>'
-        searchBox.insertAdjacentHTML("beforeend",Elem)
+    if(value){
+        page.classList.add("blur")
+        searchBox.classList.remove("dis-none")
+        products.forEach(item => {
+            let name = item.productName
+            name.includes(value) && searchboxElemGenerator(item)
+        })
+        let searchValue = searchInput.value
+        searchBox.append(fragmentSearchElem)
+        if(searchBox.children.length < 2){
+            let Elem = '<p class="product_not_found">موردی یافت نشد</p>'
+            searchBox.insertAdjacentHTML("beforeend",Elem)
+        // fetch("API/Search-porducts",{
+        //         method : "POST",
+        //         headers : {
+        //             "Content-type" : "application/json"
+        //         },
+        //         body : JSON.stringify({searchValue})
+        //     })
+        // .then(res => res.json())
+        // .then(productList => {
+        //     productList.forEach(data => searchboxElemGenerator(data))
+        // })
+        // .then(() => searchBox.append(fragmentSearchElem))
+        // .then(() => {
+        // if(searchBox.children.length < 2){
+        //     let Elem = '<p class="product_not_found">موردی یافت نشد</p>'
+        //     searchBox.insertAdjacentHTML("beforeend",Elem)
+        // }})
+        // .catch(err => new Error(err))}
+        }
     }
 }
 searchIcon.addEventListener("click",searchHandler)
@@ -212,20 +279,42 @@ const searchboxElemGenerator = item => {
     itemInfo.innerHTML =`<img src="${item.img}" alt="">
     <p class="search-product-name">${item.productName}</p>
     <p class="search-product-detail">${item.detail}</p>
-    <a href="/teacherProject/productPage/products.html?id=${item.id}"><button>رفتن به صفحه</button></a>
+    <a href="./productPage/products.html?id=${item.id}"><button>رفتن به صفحه</button></a>
     <p class="search-product-price">${item.price}تومان</p>`
     fragmentSearchElem.append(itemInfo)
 }
 const searchBoxAutoComp =  evt => {
     evt.preventDefault()
-    let inputValue = searchInput.value
-    if(!inputValue){
+    let searchValue = searchInput.value
+    if(!searchValue){
         return autoCompBox.innerHTML =  ""
     }
     autoCompBox.innerHTML =  ""
-    if(inputValue){
+    if(searchValue){
+        // fetch("API/search-Product-Name",{
+        //             method : "POST",
+        //             headers : {
+        //                 "Content-type" : "application/json"
+        //             },
+        //             body : JSON.stringify({searchValue})
+        //         })
+        // .then(res => res.json())
+        // .then(nameList => {
+        //     nameList.forEach(data => {
+        //         let Elem = `<li>${data}</li>`
+        //         autoCompBox.insertAdjacentHTML("beforeend",Elem)
+        //         let lastElem = autoCompBox.lastChild
+        //         lastElem.addEventListener("click",() => {
+        //             searchInput.value = lastElem.innerHTML
+        //         })
+        //     })
+        // })
+        // .catch(() => {
+        //      let Elem = `<li>${searchValue}</li>`
+        //      return autoCompBox.innerHTML = Elem   
+        // })
         let gnerate = productsName.filter( product => {
-            if(product.includes(inputValue)){
+            if(product.includes(searchValue)){
                 let Elem = `<li>${product}</li>`
                 autoCompBox.insertAdjacentHTML("beforeend",Elem)
                 let lastElem = autoCompBox.lastChild
@@ -233,29 +322,24 @@ const searchBoxAutoComp =  evt => {
                     searchInput.value = lastElem.innerHTML
                 })
             }})
-            if(autoCompBox.children.length != 0){
+        if(autoCompBox.children.length != 0){
                 return gnerate
-            }}
-            if(evt.key === "Enter"){
+        }}
+        if(evt.key === "Enter"){
                 evt.preventDefault()
-        return searchHandler()
-    };
-    
-    let Elem = `<li>${inputValue}</li>`
+                return searchHandler()
+        };
+            
+    let Elem = `<li>${searchValue}</li>`
     return autoCompBox.innerHTML = Elem
 }
 searchInput.addEventListener("keyup",searchBoxAutoComp)
 const autocompLi = env => {
-    let inputValue = searchInput.value
-    inputValue.innerHTML = evt.target
+    let searchValue = searchInput.value
+    searchValue.innerHTML = evt.target
     
 }
-///////////////////////////////////
-searchIcon.addEventListener("click",() => {
-    let filterbox = database.filter(data =>{
-        data === searchInput.value
-    })
-})
+///////////////////////////////////////////
 threeLine.addEventListener("click",() => {
     threeLine.classList.toggle("three-line-change")
     navLeft.classList.toggle("nav-left-change")
@@ -353,4 +437,22 @@ boxProduceBack.addEventListener("touchmove",event => {
 boxProduceBack.addEventListener("touchend",event => {
     flag = true
 })
-
+///////////////////////////////////////////////////// footer text
+// let text = "Zaban Yar"
+// let textFrag = document.createDocumentFragment()
+// const textGenerator = (text) => {
+//     let textList = [...text]
+//     for(let word of textList){
+//         let p = document.createElement("p")
+//         p.innerHTML = word
+//         textFrag.append(p)
+//     }
+//     footerText.append(textFrag)
+//     footerText.firstChild.setAttribute("class","first")
+    
+//     for(let i = 1; i < footerText.children.length;i++){
+//         console.log("hello");
+//         footerText.children[i].setAttribute("class","remains")
+//     }
+// }
+// textGenerator(text)
