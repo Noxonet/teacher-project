@@ -1,5 +1,11 @@
 :root{
+<<<<<<< HEAD
     --color1: #2648e2;
+=======
+    /* --color1: #2648e2; */
+    /* --color1: #266ba3; */
+    --color1: #222222;
+>>>>>>> 74f19d4 (#2)
     --color2: #0021b6;
     --color3: #ffffff;
     --color4: #6984ff;
@@ -8,6 +14,7 @@
     --color7: #2b2b2b;
     --color8: #000000;
     --color9: #ece9e9;
+<<<<<<< HEAD
     --color10 : #4d4d4d;
     --font1 : 'Courier New', Courier, monospace;
     --font2 : Arial, Helvetica, sans-serif;
@@ -17,6 +24,22 @@
     --shadow3: rgba(145, 145, 145, 0.4) 2px 5px, rgba(145, 145,145, 0.3) 4px 10px, rgba(145, 145,145, 0.2) 6px 15px, rgba(145, 145,145, 0.1) 8px 20px, rgba(145, 145,145, 0.05) 10px 25px;
     --shadow4: rgba(228, 228, 228, 0.4) 4px 7px, rgba(228, 228, 228, 0.3) 8px 14px, rgba(228, 228, 228, 0.2) 12px 21px, rgba(228, 228, 228, 0.1) 16px 28px, rgba(228, 228, 228, 0.05) 20px 35px;
     --shadow5: rgba(255,255,255,.7) 1px 3px ,rgba(255,255,255,.5) 4px 10px 
+=======
+    --color10:#a5a5a5;
+    --color11:#757575;
+    /* --backGroundColor1 : linear-gradient(45deg, #2b80c5, #000205); */
+    --backGroundColor1 : linear-gradient(45deg, var(--color1), #000205);
+    --backGroundColor2 : linear-gradient(276deg,black, #000000bf);
+    /* --font1 : 'Courier New', Courier, monospace; */
+    --font1 : Avini;
+    --font2 : rubik,regular;
+    --font3 :  Samim;
+    --shadow1 : rgba(100, 100, 100, 0.48) 6px 2px 16px 0px, rgba(8, 8, 8, 0.8) -6px -2px 16px 0px;
+    --shadow2 : rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;;
+    --shadow3: rgba(145, 145, 145, 0.4) .2vw .5vw, rgba(145, 145,145, 0.3) .4vw 1vw, rgba(145, 145,145, 0.2) .6vw 1.5vw, rgba(145, 145,145, 0.1) .8vw 2vw, rgba(145, 145,145, 0.05) 1vw 2.5vw;
+    --shadow4: rgba(228, 228, 228, 0.4) .4vw .7vw, rgba(228, 228, 228, 0.3) .8vw 1.4vw, rgba(228, 228, 228, 0.2) 1.2vw 2.1vw, rgba(228, 228, 228, 0.1) 1.6vw 2.8vw, rgba(228, 228, 228, 0.05) 2vw 3.5vw;
+    --shadow5: rgba(255,255,255,.7) 4px -4px ,rgba(255,255,255,.5) -4px 4px 
+>>>>>>> 74f19d4 (#2)
 }
 *{
     box-sizing: border-box;
@@ -25,7 +48,11 @@
     user-select: none;
 }
 body{
+<<<<<<< HEAD
     background-color: var(--color4);
+=======
+    background-color: var(--color1);
+>>>>>>> 74f19d4 (#2)
 }
 .box{
     position: relative;
@@ -74,7 +101,11 @@ body{
     border: 1px solid var(--color3);
     border-radius: .5vw;
     filter: brightness(.7);
+<<<<<<< HEAD
     transition: filter ease-out .3s;
+=======
+    transition: filter ease-out .1s;
+>>>>>>> 74f19d4 (#2)
 }
 .box-product-pic .nav-pics img:hover{
     filter: brightness(1);
@@ -118,7 +149,11 @@ body{
 }
 .box-info .box-detail{
     position: absolute;
+<<<<<<< HEAD
     bottom: 96%;
+=======
+    bottom: 100%;
+>>>>>>> 74f19d4 (#2)
     height: fit-content;
     width: calc(100% - 2vw);
     font-size: 2.5vw;
@@ -140,7 +175,11 @@ body{
     border-bottom-right-radius:2vw ;
 }
 .box-info .box-detail-change{
+<<<<<<< HEAD
     bottom: 40% !important; 
+=======
+    bottom: 35% !important; 
+>>>>>>> 74f19d4 (#2)
 }
 .box-info .price {
     position: absolute;
@@ -165,9 +204,12 @@ body{
     .box{
         height: 80vw;
     }
+<<<<<<< HEAD
     .box-info .box-detail{
         bottom: 98%;
     }
+=======
+>>>>>>> 74f19d4 (#2)
 
 
 }
@@ -176,6 +218,12 @@ body{
         height: 80vh;
         margin: 10vw auto;
     }
+<<<<<<< HEAD
+=======
+    .box-product-pic>img{
+        object-fit: cover;
+    }
+>>>>>>> 74f19d4 (#2)
     .box .box-product-pic .nav-pics{
         width: 100%;
         height: 20%;
@@ -196,6 +244,7 @@ body{
         bottom: 13%;
     }
     .box-info .box-detail{
+<<<<<<< HEAD
         bottom: 99%;
         line-height: 5vw;
         font-size: 4vw;
@@ -208,5 +257,19 @@ body{
     .box-info .add-to-bascket{
         width: 40%;
         font-size: 5vw;
+=======
+        line-height: 6vw;
+        font-size: 4.5vw;
+    }
+    .box-info .box-detail svg{
+        bottom: -40%;
+        width: 12vw;
+        height: 12vw;
+    }
+    .box-info .add-to-bascket{
+        width: 55%;
+        font-size: 5.5vw;
+        padding: 3vw
+>>>>>>> 74f19d4 (#2)
     }
 }

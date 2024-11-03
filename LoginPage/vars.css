@@ -1,12 +1,21 @@
 :root{
+<<<<<<< HEAD
     --color1: #2648e2;
     --color2: #0021b6;
     --color3: #bbbbbb;
+=======
+    /* --color1: #2648e2; */
+    /* --color1: #266ba3; */
+    --color1: #222222;
+    --color2: #0021b6;
+    --color3: #ffffff;
+>>>>>>> 74f19d4 (#2)
     --color4: #6984ff;
     --color5: #2600ff;
     --color6 : #e2e2e2;
     --color7: #2b2b2b;
     --color8: #000000;
+<<<<<<< HEAD
     --color9 : #1b1d1de3;
     --font1 : 'Courier New', Courier, monospace;
     --font2 : Arial, Helvetica, sans-serif;
@@ -14,6 +23,24 @@
     --shadow1 : 0px 1px 20px -5px black;
     --shadow2 : 0px -5px 10px 10px black;
     --shadow3 : 0px 3px 10px -3px black;   
+=======
+    --color9: #ece9e9;
+    --color10:#a5a5a5;
+    --color11:#757575;
+    /* --backGroundColor1 : linear-gradient(45deg, #2b80c5, #000205); */
+    --backGroundColor1 : linear-gradient(45deg, var(--color1), #000205);
+    --backGroundColor2 : linear-gradient(276deg,black, #000000bf);
+    /* --font1 : 'Courier New', Courier, monospace; */
+    --font1 : Avini;
+    --font2 : rubik,regular;
+    --font3 :  Samim;
+    --font4 : Vazirmatn, sans-serif;
+    --shadow1 : rgba(100, 100, 100, 0.48) 6px 2px 16px 0px, rgba(8, 8, 8, 0.8) -6px -2px 16px 0px;
+    --shadow2 : rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;;
+    --shadow3: rgba(145, 145, 145, 0.4) .2vw .5vw, rgba(145, 145,145, 0.3) .4vw 1vw, rgba(145, 145,145, 0.2) .6vw 1.5vw, rgba(145, 145,145, 0.1) .8vw 2vw, rgba(145, 145,145, 0.05) 1vw 2.5vw;
+    --shadow4: rgba(228, 228, 228, 0.4) .4vw .7vw, rgba(228, 228, 228, 0.3) .8vw 1.4vw, rgba(228, 228, 228, 0.2) 1.2vw 2.1vw, rgba(228, 228, 228, 0.1) 1.6vw 2.8vw, rgba(228, 228, 228, 0.05) 2vw 3.5vw;
+    --shadow5: rgba(255,255,255,.7) 4px -4px ,rgba(255,255,255,.5) -4px 4px 
+>>>>>>> 74f19d4 (#2)
 }
 .c-var1{
 color: var(--color1) !important;

@@ -10,12 +10,21 @@ const
     ,productPic = $.querySelector(".box-product-pic")
     ,boxPrice = $.querySelector(".box-info .price")
     ,products = [
+<<<<<<< HEAD
         {id : 1,dataID : "book1",dataIDsaveICON : "save1",productName : "grammer book",price : 30 +"$",img : "./pics/Writing.General.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
         ,{id : 2,dataID : "book2",dataIDsaveICON : "save2",productName : "listening book",price : 40 +"$",img : "./pics/Speaking.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
         ,{id : 3,dataID : "book3",dataIDsaveICON : "save3",productName : "reading book",price : 10 +"$",img : "./pics/Listening.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
         ,{id : 4,dataID : "book4",dataIDsaveICON : "save4",productName : "words book",price : 50 +"$",img : "./pics/003AC.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
         ,{id : 5,dataID : "book5",dataIDsaveICON : "save5",productName : "words book",price : 50 +"$",img : "./pics/Untitled-1-2.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
         ,{id : 6,dataID : "book6",dataIDsaveICON : "save6",productName : "words book",price : 50 +"$",img : "./pics/001AC.webp",images : ["/teacherProject/pics/001AC.webp","/teacherProject/pics/003AC.webp","/teacherProject/pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+=======
+        {id : 1,dataID : "book1",dataIDsaveICON : "save1",productName : "grammer book",price : 30 +"$",img : "./../pics/Writing.General.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 2,dataID : "book2",dataIDsaveICON : "save2",productName : "listening book",price : 40 +"$",img : "./../pics/Speaking.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 3,dataID : "book3",dataIDsaveICON : "save3",productName : "reading book",price : 10 +"$",img : "./../pics/Listening.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 4,dataID : "book4",dataIDsaveICON : "save4",productName : "words book",price : 50 +"$",img : "./../pics/003AC.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 5,dataID : "book5",dataIDsaveICON : "save5",productName : "words book",price : 50 +"$",img : "./../pics/Untitled-1-2.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+        ,{id : 6,dataID : "book6",dataIDsaveICON : "save6",productName : "words book",price : 50 +"$",img : "./../pics/001AC.webp",images : ["./../pics/001AC.webp","./../pics/003AC.webp","./../pics/Speaking.webp"],detail : "                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد"}
+>>>>>>> 74f19d4 (#2)
     ]
 
 
@@ -28,8 +37,13 @@ let product = products.find(user => {
 let fragmentImg = $.createDocumentFragment()
 let fragmentNavImg = $.createDocumentFragment()
 const picsGenerator = product => {
+<<<<<<< HEAD
     let img = $.createElement("img")
     img.setAttribute("src",product.images[0])
+=======
+    let img = $.createElement("img");
+    img.setAttribute("src",product.images[0]);
+>>>>>>> 74f19d4 (#2)
     fragmentImg.append(img)
 }
 const navPicsGenerator = product =>{
